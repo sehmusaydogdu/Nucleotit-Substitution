@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biyoenformatik.algorithm.KimuraModel"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transition Değerini Giriniz"
+            android:textSize="25dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/editTransition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Transition = > 0.45"
+            android:textColorHint="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tranversion Değerini Giriniz"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editTransversion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal"
+            android:hint="Tranversion = > 0.23"
+            android:textColorHint="@color/colorAccent"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="onHesapla"
+            android:padding="15dp"
+            android:text="Kimura Hesapla "
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtSonuc"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

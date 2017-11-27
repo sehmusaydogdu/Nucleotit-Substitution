@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biyoenformatik.algorithm.JukesCantorModel"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yer Değiştirme Oranı"
+            android:textSize="25dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="numberDecimal"
+            android:hint="0 - 0.75 Aralıkta Değer Giriniz"
+            android:textColorHint="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+
+            <EditText
+                android:id="@+id/editTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Zaman Değerini Giriniz"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/colorAccent" />
+
+            <CheckBox
+                android:id="@+id/rdrCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zaman"
+                android:onClick="onRdrClick"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onHesapla"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:text="Jukes-Cantor Hesapla"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtSonuc"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
